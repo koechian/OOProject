@@ -18,6 +18,7 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.tabs.Tab;
 import com.vaadin.flow.component.tabs.Tabs;
 import com.vaadin.flow.component.tabs.TabsVariant;
+import com.vaadin.flow.component.textfield.TextArea;
 import com.vaadin.flow.router.RouterLink;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.router.PageTitle;
@@ -121,7 +122,7 @@ public class MainLayout extends AppLayout {
     }
 
     private List<Tab> createMenuItems() {
-        MenuItemInfo[] menuItems = new MenuItemInfo[]{ //
+        MenuItemInfo[] menuItems = new MenuItemInfo[] { //
                 new MenuItemInfo("Schedule ", "la la-calendar", ScheduleView.class), //
 
                 new MenuItemInfo("Exams ", "la la-pen-nib", ExamsView.class), //
