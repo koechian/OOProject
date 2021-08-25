@@ -1,13 +1,8 @@
 package com.example.application.views.schedule;
 
-import com.vaadin.flow.component.Component;
-import com.vaadin.flow.component.Text;
-import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.component.html.Div;
-import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
-import com.vaadin.flow.component.orderedlayout.VerticalLayout;
-import com.vaadin.flow.component.textfield.TextField;
+
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.router.PageTitle;
 
@@ -132,6 +127,7 @@ public class ScheduleView extends Div {
         add(grid);
 
         add(date + dtf.format(now) + " " + dayWeek);
+        setClassName(date);
     }
 
 }
