@@ -1,8 +1,10 @@
 package com.example.application.views.schedule;
 
+import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.component.html.Div;
-
+import com.vaadin.flow.component.icon.Icon;
+import com.vaadin.flow.component.icon.VaadinIcon;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.router.PageTitle;
 
@@ -128,6 +130,13 @@ public class ScheduleView extends Div {
 
         add(date + dtf.format(now) + " " + dayWeek);
         setClassName(date);
+
+        Button leftButton = new Button("Previous Day", new Icon(VaadinIcon.ARROW_LEFT));
+
+        Button rightButton = new Button("Next Day", new Icon(VaadinIcon.ARROW_RIGHT));
+        rightButton.setIconAfterText(true);
+
+        add(leftButton, rightButton);
     }
 
 }

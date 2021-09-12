@@ -22,7 +22,7 @@ import com.vaadin.flow.router.RouterLink;
 import com.vaadin.flow.router.PageTitle;
 import com.example.application.views.MainLayout;
 import com.example.application.views.schedule.ScheduleView;
-import com.example.application.views.exams.ExamsView;
+import com.example.application.views.mynotebook.MyNotebookView;
 import com.example.application.views.tasks.TasksView;
 import com.vaadin.flow.server.PWA;
 import com.vaadin.flow.theme.Theme;
@@ -123,7 +123,7 @@ public class MainLayout extends AppLayout {
         MenuItemInfo[] menuItems = new MenuItemInfo[] { //
                 new MenuItemInfo("Schedule ", "la la-calendar", ScheduleView.class), //
 
-                new MenuItemInfo("Exams ", "la la-pen-nib", ExamsView.class), //
+                new MenuItemInfo("My Notebook ", "la la-pen-nib", MyNotebookView.class), //
 
                 new MenuItemInfo("Tasks", "la la-list", TasksView.class), //
 
